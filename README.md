@@ -1,17 +1,38 @@
 # Calculator
 
-A simple command-line calculator built with Go.
+A command-line calculator built with Go.
 
-## Features
+## What it can do
 
 - Addition
 - Subtraction
 - Multiplication
 - Division
 
-## How to Run
+## Requirements
 
-Clone the repository:
+- Go 1.26 or later
+
+## Running the project
 
 ```bash
-git clone https://github.com/olaiyadigitech/calculator.git
+go run .
+```
+
+## Example
+
+```text
+Enter first number: 10
+Enter operator (+, -, *, /): *
+Enter second number: 5
+
+Result: 50
+```
+
+## Planned improvements
+
+- Keep the calculator running until the user chooses to exit
+- Better input validation
+- Support more complex calculations
+
+---
