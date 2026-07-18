@@ -1,19 +1,35 @@
-# Calculator
+# Go Calculator
 
-A command-line calculator built with Go.
+A simple command-line calculator built with Go that performs basic arithmetic operations. This project was created to strengthen my understanding of Go fundamentals, user input handling, conditional statements, and functions.
 
-## What it can do
+## Features
 
-- Addition
-- Subtraction
-- Multiplication
-- Division
+* Addition (`+`)
+* Subtraction (`-`)
+* Multiplication (`*`)
+* Division (`/`)
+* Prevents division by zero with an appropriate error message
+* Interactive command-line interface
 
-## Requirements
+## Technologies Used
 
-- Go 1.26 or later
+* Go (Golang)
 
-## Running the project
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/olaiyadigitech/calculator.git
+```
+
+### Navigate to the project
+
+```bash
+cd calculator
+```
+
+### Run the application
 
 ```bash
 go run .
@@ -21,18 +37,45 @@ go run .
 
 ## Example
 
-```text
-Enter first number: 10
-Enter operator (+, -, *, /): *
-Enter second number: 5
+### Valid Calculation
 
-Result: 50
+```text
+Enter first number: 20
+Enter operation (+, -, *, /): /
+Enter second number: 4
+
+Result: 5
 ```
 
-## Planned improvements
+### Division by Zero
 
-- Keep the calculator running until the user chooses to exit
-- Better input validation
-- Support more complex calculations
+```text
+Enter first number: 20
+Enter operation (+, -, *, /): /
+Enter second number: 0
 
----
+Error: Division by zero is not allowed.
+```
+
+## Concepts Practiced
+
+* Variables
+* User input (`fmt.Scan`)
+* Conditional statements (`switch`)
+* Arithmetic operations
+* Error handling
+* Basic Go project structure
+
+## Future Improvements
+
+* Support advanced mathematical operations
+* Add command history
+* Improve input validation
+* Build a graphical user interface (GUI)
+* Expose the calculator as a REST API
+
+## Author
+
+**Ajayi Oluwafemi Olaiya**
+
+* GitHub: https://github.com/olaiyadigitech
